@@ -8,3 +8,14 @@ title: "Home"
 {% else %}
   {% include archive.html title="Posts" %}
 {% endif %}
+
+---
+layout: default
+title: "About"
+---
+
+{% if site.show_excerpts %}
+  {% include about.html %}
+{% else %}
+  {% include about.html title="Posts" %}
+{% endif %}
